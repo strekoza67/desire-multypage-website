@@ -264,13 +264,146 @@
 }
 
 .top {
+  &__inner {
+    padding-bottom: 70px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/slider-bg.jpg);
+      width: 100%;
+      height: 722px;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
   &__slider-item {
-    // display: flex;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slider-img {
+    margin-left: -10%;
+    max-width: 703px;
+    height: 815px;
+    object-fit: cover;
+  }
+
+  &__slider-info {
+    max-width: 645px;
+    margin-left: 25px;
   }
 
   &__slider-title {
     color: $title;
     font-size: 110px;
     line-height: 135px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 185px;
+      height: 1px;
+      background: #6D7278;
+    }
+  }
+
+  &__slider-text {
+    max-width: 585px;
+  }
+}
+
+.new__collection {
+  text-align: center;
+  padding: 45px 0 105px;
+
+  &__title {
+    color: $title;
+    font-size: 36px;
+    line-height: 51px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: #6D7278;
+    }
+  }
+
+  &-text {
+    max-width: 730px;
+    margin: 0 auto 30px;
+  }
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__images {
+    min-height: 350px;
+    object-fit: cover;
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#fff, .7);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info-title {
+    font-size: 20px;
+    line-height: 25px;
+    color: $title;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    position: relative;
+
+    &::after {
+      content: "";
+      bottom: 0;
+      position: absolute;
+      height: 1px;
+      background: #6D7278;
+      w80%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__info-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #707070;
   }
 }
