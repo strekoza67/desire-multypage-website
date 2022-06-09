@@ -28,3 +28,29 @@ $(function () {
 // closeMenu.addEventListener('click', () => {
 //   menu.classList.add('rightside-menu--close');
 // });
+
+// Mixit up
+
+// const buttons = document.querySelectorAll('.gallery__btn'),
+//   galleryItems = document.querySelectorAll('.gallery__items');
+
+
+
+// function app() {
+//   function filter(category, items) {
+//     items.forEach(item => {
+//       const isItemFiltered = !item.classList.matches(category);
+//       if (isItemFiltered) {
+
+//       }
+//     })
+//   }
+
+//   buttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//       console.log(button.dataset.filter);
+//     });
+//   });
+// }
+
+// app();
